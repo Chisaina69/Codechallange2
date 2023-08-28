@@ -14,8 +14,8 @@ def test_customer_methods():
 
 
 def test_restaurant_methods():
-    restaurant = Restaurant("Tasty Bites")
-    assert restaurant.get_name() == "Tasty Bites"
+    restaurant = Restaurant("Chum Bucket")
+    assert restaurant.get_name() == "Chum Bucket"
     assert restaurant.get_reviews() == []
     assert restaurant.average_star_rating() == 0
 
@@ -24,7 +24,7 @@ def test_restaurant_methods():
 
 def test_review_methods():
     customer = Customer("Ashley", "Chuumwe")
-    restaurant = Restaurant("Cafe Delight")
+    restaurant = Restaurant("Crusty Crub")
     review = Review(customer, restaurant, 5)
     assert review.get_rating() == 5
     assert review.get_customer() == customer
@@ -34,7 +34,7 @@ def test_review_methods():
 
 
 def test_interactions():
-    restaurant = Restaurant("Tasty Bites")
+    restaurant = Restaurant("Chum Bucket")
     customer = Customer("Quincy", "Alexandria")
     customer.add_review(restaurant, 4)
     assert len(customer.restaurants()) == 1

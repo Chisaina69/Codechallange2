@@ -107,8 +107,8 @@ class Review:
 
 
 # Creating instances
-restaurant1 = Restaurant("Tasty Bites")
-restaurant2 = Restaurant("Cafe Delight")
+restaurant1 = Restaurant("Chum Bucket")
+restaurant2 = Restaurant("Crusty Crub")
 
 customer1 = Customer("Quincy", "Alexandria")
 customer2 = Customer("Ashley", "Chuumwe")

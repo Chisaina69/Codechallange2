@@ -76,6 +76,11 @@ class Restaurant:
         if num_reviews == 0:
             return 0
         return total_ratings / num_reviews
+    
+    @classmethod
+    def all (cls):
+        return cls.all_restaurants
+    
 
 
 class Review:
